@@ -10,37 +10,34 @@ params: {
 
 result =
 {
-	vehicle_list: [
+    result: int
+	entries: [
 		{
-			owner_head_image: String,
-			latitude: double,
-			longitude: double
+			image: String,
+			// "rentedTimes": 18,
+            "operationState": "ONLINE",
+            "latitude": 39.96825423057802,
+            "description": "fortwo 水晶白 彩带",
+            "licenseNum": "京Q5R2P9 两座",
+            "powerPercent": 0.7785714285714286,
+            // "rentedMileage": 705,
+            // "rentedHours": 274.2,
+            "id": 25,
+            "ownerUid": 109,
+            "vinNum": "WMEFK5DA7GK138879",
+            "powerType": "FUEL",
+            "longitude": 116.48958177412688
+
+//// add ////
+
+            owner_name: String,
+            percentage_battery: double,
+            restriction: bool,
+            vehicle_type: int  // smart for 2/ smart for 4
+            color: [int, int]
+            distance: long, //单位km
 		}
-	],
-	total: int
-}
-
-
-
-悬浮信息：
-GetVechicleBasicInfoById
-params: {
-	vehicle_id: int,
-	user: {
-		latitude: double,
-		longitude: double
-	}
-}
-result =
-{
-	owner_head_image: String,
-	owner_name: String,
-	vehicle_type: int,
-	color: [String,String],  // 只有两种颜色 TBD String or int
-	percentage_oil: double,
-	percentage_battery: double,
-	restriction: bool,
-	distance: double //单位km
+	]
 }
 
 
@@ -54,7 +51,6 @@ params: {
 }
 result=
 {
-	vehicle_info: {
 		vehicle_type: int,
 		color: [String],  // 只有两种颜色 TBD String or int
 		vehicle_status: int,
@@ -62,12 +58,10 @@ result=
 		percentage_battery: double,
 		walking_time: String,
 		plate_number: String,
-		vehicle_img: String // TBD
+		vehicle_image: String // TBD
 		restriction: bool,
 		latitude: double,
 		longitude: double
-	},
-	owner_info: {
 		owner_head_image: String,
 		owner_name: String,
 		total_lending: int,
@@ -78,20 +72,20 @@ result=
 }
 
 
-1107:  CreateAppointmentOrder
+// 1107:  Reservation
+// TBD by Front-end
 params: {
 	location: String,
-	strat_time: int,
-	end_time: int,
+	start_time: long,
+	end_time: long,
 	message: String
 }
 result= {
-	status: String or httpCode // TBD
 	msg: String
 }
 
 
-1108: renterAppointmentOrders:
+1108: RenterAppointmentOrders:
 
 param:
 {
@@ -103,17 +97,17 @@ result = [
    {
      owner_head_image: String,
      owner_name:String,
-     start_time: int,
-     end_time:int,
-     count_down:int,
-     order_status:int,
-     color:[Strng,String],
+     start_time: long,
+     end_time: long,
+     count_down: long,
+     journey_status: int,
+     color:[int , int],
      vehicle_type: int,
      plate_number: String,
-     distance:double,
+     distance: long,
      latitude: double,
 	 longitude: double
-	 phone_number:int
+	 phone_number: String
    }
 ]
 
