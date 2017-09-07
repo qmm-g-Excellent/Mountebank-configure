@@ -4,9 +4,9 @@
       "is": {
         "statusCode": 200,
         "body": {
-          "Text": "Response TWO ",
-          "token": "emailAddress",
-          "expires_in": 90
+          "type": "post",
+          "responses": "qmm-post",
+          "chinese": "支持中文"
         },
         "headers": {
           "content-type": "application/json;charset=utf-8"
