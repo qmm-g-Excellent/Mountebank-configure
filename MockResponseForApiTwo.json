@@ -7,6 +7,9 @@
           "Text": "Response TWO ",
           "token": "emailAddress",
           "expires_in": 90
+        },
+        "headers": {
+          "content-type": "application/json;charset=utf-8"
         }
       }
     }

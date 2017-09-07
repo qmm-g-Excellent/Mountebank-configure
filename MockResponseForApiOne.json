@@ -14,7 +14,10 @@
             "name": "balab",
             "password": 22
           }
-        ]
+        ],
+        "headers": {
+          "content-type": "application/json;charset=utf-8"
+        }
       }
     }
   ],

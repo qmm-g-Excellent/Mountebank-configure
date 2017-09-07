@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ba8679f-1d51-4241-89d6-a07adce599b9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imposter.ejs" afterPath="$PROJECT_DIR$/Imposter.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MockResponseForApiOne.json" afterPath="$PROJECT_DIR$/MockResponseForApiOne.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MockResponseForApiTwo.json" afterPath="$PROJECT_DIR$/MockResponseForApiTwo.json" />
     </list>
@@ -19,8 +17,8 @@
       <file leaf-file-name="MockResponseForApiOne.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MockResponseForApiOne.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="342">
+              <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -39,8 +37,8 @@
       <file leaf-file-name="MockResponseForApiTwo.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MockResponseForApiTwo.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            <state relative-caret-position="216">
+              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -60,8 +58,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Imposter.ejs" />
-        <option value="$PROJECT_DIR$/MockResponseForApiTwo.json" />
         <option value="$PROJECT_DIR$/MockResponseForApiOne.json" />
+        <option value="$PROJECT_DIR$/MockResponseForApiTwo.json" />
       </list>
     </option>
   </component>
@@ -226,12 +224,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504751340097</updated>
-      <workItem from="1504751341947" duration="8048000" />
+      <workItem from="1504751341947" duration="8112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8048000" />
+    <option name="totallyTimeSpent" value="8112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="251" y="38" width="979" height="814" extended-state="0" />
@@ -294,16 +292,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MockResponseForApiOne.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="342">
+          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MockResponseForApiTwo.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="216">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding />
         </state>
       </provider>
