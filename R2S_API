@@ -1,0 +1,124 @@
+1003
+
+1103: GetVehicleList
+
+params: {
+	latitude: double,
+	longitude: double
+	radius: double
+}
+
+result =
+{
+	vehicle_list: [
+		{
+			owner_head_image: String,
+			latitude: double,
+			longitude: double
+		}
+	],
+	total: int
+}
+
+
+
+悬浮信息：
+GetVechicleBasicInfoById
+params: {
+	vehicle_id: int,
+	user: {
+		latitude: double,
+		longitude: double
+	}
+}
+result =
+{
+	owner_head_image: String,
+	owner_name: String,
+	vehicle_type: int,
+	color: [String,String],  // 只有两种颜色 TBD String or int
+	percentage_oil: double,
+	percentage_battery: double,
+	restriction: bool,
+	distance: double //单位km
+}
+
+
+1105: GetVehicleDetailById
+params: {
+	vehicle_id: int,
+	user: {
+		latitude: double,
+		longitude: double
+	}
+}
+result=
+{
+	vehicle_info: {
+		vehicle_type: int,
+		color: [String],  // 只有两种颜色 TBD String or int
+		vehicle_status: int,
+		percentage_oil: double,
+		percentage_battery: double,
+		walking_time: String,
+		plate_number: String,
+		vehicle_img: String // TBD
+		restriction: bool,
+		latitude: double,
+		longitude: double
+	},
+	owner_info: {
+		owner_head_image: String,
+		owner_name: String,
+		total_lending: int,
+		total_distance: int,
+		positive_rate: double,
+		// 信用分 这期不做
+	}
+}
+
+
+1107:  CreateAppointmentOrder
+params: {
+	location: String,
+	strat_time: int,
+	end_time: int,
+	message: String
+}
+result= {
+	status: String or httpCode // TBD
+	msg: String
+}
+
+
+1108: renterAppointmentOrders:
+
+param:
+{
+	latitude: double,
+	longitude: double
+}
+
+result = [
+   {
+     owner_head_image: String,
+     owner_name:String,
+     start_time: int,
+     end_time:int,
+     count_down:int,
+     order_status:int,
+     color:[Strng,String],
+     vehicle_type: int,
+     plate_number: String,
+     distance:double,
+     latitude: double,
+	 longitude: double
+	 phone_number:int
+   }
+]
+
+
+
+
+
+

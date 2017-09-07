@@ -1,29 +1,32 @@
-
+{
   "responses": [
     {
       "is": {
         "statusCode": 200,
-        "body":[ {
-                    "id":"1 ","name":"qmm","password":11
-                 }, {
-                    "id":"2 ","name":"balab","password":22
-             }]
+        "body": [
+          {
+            "id": "1 ",
+            "name": "qmm邱敏你",
+            "password": 11
+          },
+          {
+            "id": "2 ",
+            "name": "balab",
+            "password": 22
+          }
+        ]
       }
     }
   ],
   "predicates": [
     {
-      "and": [
-        {
-          "equals": {
-            "method": "GET"
-          }
-        },
-        {
-          "equals": {
-            "path": "/posts"
-          }
+      "equals": {
+        "method": "GET",
+        "path": "/vehiclelist",
+        "query": {
+          "a": "b"
         }
-      ]
+      }
     }
   ]
+}
