@@ -1,13 +1,5 @@
 {
 "imposters": [
-{
-"port": 8001,
-"protocol": "http",
-"stubs": [
-<% include MockResponseForApiOne.json %>
-,
-<% include MockResponseForApiTwo.json %>
-]
-}
-]
+    <% include imposters/r2s.ejs %>
+    ]
 }

@@ -1,0 +1,35 @@
+{
+  "responses": [
+    {
+      "is": {
+        "statusCode": 200,
+        "body": [
+          {
+            "id": "1 ",
+            "name": "qmm邱敏你",
+            "password": 11
+          },
+          {
+            "id": "2 ",
+            "name": "balab",
+            "password": 22
+          }
+        ],
+        "headers": {
+          "content-type": "application/json;charset=utf-8"
+        }
+      }
+    }
+  ],
+  "predicates": [
+    {
+      "equals": {
+        "method": "GET",
+        "path": "/vehiclelist",
+        "query": {
+          "a": "b"
+        }
+      }
+    }
+  ]
+}
